@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Форма обратной связи</title>
+	<link rel="stylesheet" href="style.css">
+	</head>
+
+<body>
+	<section class="form">
+		<div class="form__container" id="fitback">
+				<h2>Форма обратной связи</h2>
+				<form method="post" action="#">
+					<div class="form__group">
+						<label for="name">Ваше имя</label>
+						<input type="text" placeholder="Имя" id="name">
+					</div>
+					<div class="form__group">
+						<label for="surname">Ваша фамилия</label>
+						<input type="text" placeholder="Фамилия" required="Обязательное поле" id="surname">
+					</div>
+					<div class="form__group">
+						<label for="email">Электронный адрес</label>
+						<input type="text" placeholder="email" required="Обязательное поле" id="email">
+					</div>
+					<div class="form__group">
+						<label for="text">Выбрать категорию</label>
+						<select id="categories" required="Обязательное поле"  minlength: jQuery.validator.format("Длина сообщения должна быть больше 10-ти символов")>
+							<option>Выбирите категорию</option>
+						</select>
+					</div>
+					<div class="form__group">
+						<label for="text">Оставьте сообщение</label>
+						<input type="text" placeholder="Сообщение" required="Обязательное поле">
+					</div>
+					<div class="form__group">
+						<label for="url">Добавить картинку</label>
+						<input type="url" placeholder="Картинка" required="формат jpg, png. Размер не более 2Мб">
+					</div>
+					<button type="submit" title="Submit">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>
